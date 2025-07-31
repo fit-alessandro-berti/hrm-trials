@@ -265,7 +265,7 @@ def run_epoch(model, loader, device, segments, loss_fn,
     return l, brd, cell, agg['cell_c'], agg['mask']
 
 # ----------------------- curriculum schedule -----------------------
-def curriculum(ep): return (45,45) if ep<=2 else (37,37) if ep<=5 else (30,30)
+def curriculum(ep): return (70, 70)
 
 # ------------------------------ main -------------------------------
 def main(a):
