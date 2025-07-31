@@ -315,10 +315,10 @@ def main(a):
 if __name__ == "__main__":
     p = argparse.ArgumentParser("HRM Sudoku – fast‑converging edition")
     # training
-    p.add_argument("--epochs", type=int, default=15)
+    p.add_argument("--epochs", type=int, default=400)
     p.add_argument("--batch",  type=int, default=128)
-    p.add_argument("--num-train", type=int, default=8000)
-    p.add_argument("--num-test",  type=int, default=1000)
+    p.add_argument("--num-train", type=int, default=1000)
+    p.add_argument("--num-test",  type=int, default=200)
     # optimisation
     p.add_argument("--lr", type=float, default=1e-3)
     p.add_argument("--wd", type=float, default=0.01)
